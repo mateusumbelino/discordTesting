@@ -1,6 +1,7 @@
 // const Discord = require('discord.js')
 // const client = new Discord.Client();
 
+const path = require('path')
 const Commando = require('discord.js-commando')
 
 // const config = require('./config.json')
@@ -14,7 +15,12 @@ const client = new Commando.CommandoClient({
 client.on('ready', () => {
     console.log('The client is ready!')
 
-    client.registry.registerDefaults()
+    client.registry
+    .registerGroups([
+        ['misc', 'misc commands']
+    ])
+    .registerDefaults()
+    .registerCommandsIn(path.join(__dirname, 'cmds'))
 
     //command(client, ['ping', 'test'], (message) => {
     //    message.channel.send('Pong!')
