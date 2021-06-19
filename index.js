@@ -8,7 +8,7 @@ const command = require('./command')
 
 const client = new Commando.CommandoClient({
     owner: '143180142838022145',
-    commandPrefix: config.prefix
+    commandPrefix: '!'
 })
 
 client.on('ready', () => {
