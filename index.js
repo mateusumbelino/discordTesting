@@ -27,4 +27,5 @@ client.on('ready', () => {
     //})
 })
 
+//client.login(config.token)
 client.login(process.env.DJS_TOKEN)
