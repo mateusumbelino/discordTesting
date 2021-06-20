@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-pre-gyp": "^0.16.0",
     "@discordjs/opus": "github:discordjs/opus",
+    "bcryptjs": "^2.4.3",
     "discord.js": "^12.5.3",
     "discord.js-commando": "git+https://github.com/discordjs/commando.git",
-    "ffmpeg-static": "^4.4.0"
+    "ffmpeg-static": "^4.4.0",
+    "node-pre-gyp": "^0.16.0"
   }
 }
